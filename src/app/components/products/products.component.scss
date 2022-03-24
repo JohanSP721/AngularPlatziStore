@@ -1,0 +1,25 @@
+.products--container
+{
+	display: flex;
+	flex-direction: column;
+}
+
+@media only screen and (min-width: 40rem)
+{
+	.products--container
+	{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 70rem)
+{
+	.products--container
+	{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 1.5rem;
+	}
+}
